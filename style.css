@@ -38,7 +38,7 @@ a {
 }
 
 img {
-  width: 100%
+  width: 100%;
 }
 
 h1 {
@@ -67,7 +67,7 @@ p {
 .section__title {
   font-size: 48px;
   font-weight: 900px;
-  color: rgb(36, 62, 99)
+  color: rgb(36, 62, 99);
   line-height: 1.5;
   margin: 16px 0;
   letter-spacing: 0.025em;
