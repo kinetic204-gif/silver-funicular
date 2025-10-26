@@ -1,7 +1,7 @@
 console.log("JavaScript is linked successfully.");
 
 function openMenu() {
-    document.body.classList.add("menu--open");
+    document.body.classList += " menu--open";
 }
 
 function closeMenu() {
