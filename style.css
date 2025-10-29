@@ -74,7 +74,7 @@ p {
   letter-spacing: 0.025em;
 }
 
-#features .section__titile,
+#features .section__title,
 #pricing .section__title {
   text-align: center;
 }
@@ -82,8 +82,8 @@ p {
 .section__para {
   font-size: 18px;
   font-weight: 500;
-  color: #7c8ba1;
-  line-height: .1.625;
+  color: rgb(124, 139, 161);
+  line-height: 1.625;
 }
 
 .btn {
@@ -277,7 +277,7 @@ filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg) brightness(94%
   top: 0;
   left: 0;
   right: 0;
- height: 378px;
+  height: 378px;
   margin: 24px 16px;
   padding: 32px;
   background-color: #fff;
@@ -404,11 +404,130 @@ width: 100%;
 max-width: 768px;
 }
 
+/* FEATURES */
+
+.feature {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  
+  margin-top: 40px;
+}
+
+.feature__img {
+  width: 24px;
+  height: 24px;
+}
+
+#features .row__narrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature__row {
+  display: flex;
+  align-items: flex-start;
+  padding: 32px 24px;
+}
+
+.feature__img--wrapper {
+  display: flex;
+  padding: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(229, 231, 235);
+  border-image: initial;
+  border-radius: 500px;
+}
+
+.feature__para {
+  margin-top: 16px;
+  font-size: 16px;
+  max-width: clac(211.333px);
+  color: rgb(124, 139, 161);
+  line-height: 2;
+  font-weight: 500;
+}
+
+#features .section__para {
+  text-align: center;
+  max-width: 576px;
+}
+
+.feature__img {
+  width: 24px;
+  height: 24px;
+}
+
+.feature__text {
+  margin-top: 8px;
+  margin-left: 16px;
+}
+
+.row__narrow {
+  width: 100%;
+  max-width: 1024;
+  margin: 0 auto;
+}
+
+/* QUALITY */
+
+#quality .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#quality .section__title,  #values .section__title {
+  line-height: 1.25;
+}
+
+.quality__img {
+  z-index: 1;
+}
+
+.quality__description, .quality__img--wrapper {
+  width: 50%;
+}
+
+.quality__description {
+  max-width: 576px;
+}
+
+
+
+
+
+
+
+
   /* MEDIA RESPONSINESS */
 
   @media (max-width: 1200px) {
     .header__img {
       max-width: 512px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section__para {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .section__para {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .section__title {
+      font-size: 36px;
     }
   }
 
