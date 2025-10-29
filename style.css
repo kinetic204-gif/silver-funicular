@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  padding: 96px 0:
+  padding: 96px 0;
 }
 
 a {
@@ -54,12 +54,7 @@ h1 {
 p {
   line-height: 1.5;
   font-size: 18px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  max-width: 40%;
+ 
 }
 
 .section__tag {
@@ -246,6 +241,8 @@ nav {
   margin-left: 48px;
 }
 
+/* MENU */
+
 .btn {
   background-color: #6415ff;
   padding: 12px 32px;
@@ -369,17 +366,17 @@ header .row {
 
 
 .header__customers {
-  width: 100vw;
-  max-width: 300px;
-  font-size: 48px;
-  padding: 48px 24px;
+  margin-top: 16px;
+  padding-right: 128px;
+  opacity: 0.5;
 }
 
 .header__customers--title {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
-  margin-top: 72px;
-  padding: 0 24px;
+  margin-top: 80px;
+  letter-spacing: 0.6;
+  color: #a0aec0;
 }
 
 .header__description {
