@@ -453,13 +453,6 @@ color: rgb(158, 170, 189);
   transition: all 300ms ease;
 }
 
-/* TECH STACK */
-
-.header__img {
-width: 100%;
-max-width: 768px;
-}
-
 /* FEATURES */
 
 #features {
@@ -490,7 +483,7 @@ max-width: 768px;
 }
 .features {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -513,7 +506,7 @@ max-width: 768px;
 
 .feature__img--wrapper {
   display: flex;
-  padding: 20px;#e5e7eb;
+  padding: 20px; #e5e7eb;
   border-radius: 500px;
 }
 
@@ -559,6 +552,8 @@ max-width: 768px;
 
 /* QUALITY WORK */
 
+
+
 #quality .row {
   display: flex;
   justify-content: space-between;
@@ -574,16 +569,8 @@ max-width: 768px;
   margin-top: 32px;
 }
 
-#quality .section__title,  #values .section__title {
-  line-height: 1.25;
-}
-
 .quality__img {
-  z-index: 1;
-}
-
-.quality__description, .quality__img--wrapper {
-  width: 50%;
+  z-index: 5;
 }
 
 .quality__description {
@@ -591,8 +578,7 @@ max-width: 768px;
   margin-right: 64px;
 }
 
-.quality__description,
-.quality__img--wrapper{
+.quality__description, .quality__img--wrapper {
   width: 50%;
 }
 
@@ -616,8 +602,84 @@ max-width: 768px;
   --tw-text-opacity: 1;
   color: rgba(100, 21, 255, var(--tw-text-opacity));
   z-index: 0;
-  display: flex;
+  display: block;
 }
+
+/* Steps */
+
+#steps .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step__img {
+  z-index: 2;
+}
+
+.steps__description, .steps__img--wrapper {
+  width: 50%;
+}
+
+.steps__description {
+  padding: 32px 0;
+  padding-left: 64px;
+}
+
+.steps__img--wrapper {
+  display: flex;
+  position: relative;
+  
+}
+
+.step__number {
+  color: #cbd5e0;
+  font-size: 36px;
+  font-weight: 600px;
+  line-height: 1;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+
+.step__description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  max-width: 320px;
+}
+
+.step__title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #243e63;
+  line-height: 1;
+}
+
+.step__para {
+  font-size: 14px;
+  color: #718096;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.steps__grid {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 10rem;
+  opacity: 0.8;
+  z-index: -10;
+  color:rgb(100, 21, 255); /*currentColor will inherit this */
+  fill: currentColor;
+}
+
 
 
 
