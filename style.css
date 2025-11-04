@@ -675,10 +675,14 @@ color: rgb(158, 170, 189);
 
 /* VALUES */
 
+#values {
+  padding: o auto;
+}
+
 #values .row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 #values .section__title {
   margin-top: 16px;
@@ -690,8 +694,8 @@ color: rgb(158, 170, 189);
 }
 
 .value {
-  margin-top: 2rem;
-  margin-right: 2rem;
+  margin-top: 2px;
+  margin-right: 2px;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -703,7 +707,13 @@ color: rgb(158, 170, 189);
 
 .values__description,
 .values__img {
-  width: 50%
+  width: 50%;
+}
+
+.values__img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .values__list {
